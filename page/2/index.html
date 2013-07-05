@@ -1,0 +1,226 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Shu@Note</title>
+	<meta name="author" content="ciffel">
+
+	
+	<meta name="description" content="Jul 21st, 2012 於Facebook Feed中加入連結 當想要在Facebook Feed加入連結的時候，會發現description只能是純文字，如果加入HTML TAG就會自動被濾掉，官方文件中沒有寫明如何在description加入連結，稍微Google了一下才找到解法， &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Shu@Note" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://blog.shume.in/page/2/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("ciffel@gmail.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+</div>
+<hgroup>
+  <h1><a href="/">Shu@Note</a></h1>
+  
+</hgroup>
+
+<p class="subtitle"></p>
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+
+<section class="aboutme">
+  <p>
+    Hello, World!
+  </p>
+</section>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		
+		
+		<a class="github" href="https://github.com/ciffel" title="GitHub">GitHub</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner">
+<div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-21T22:34:17+08:00" data-updated="true" itemprop="datePublished">Jul 21<span>st</span>, 2012</time></div>
+		<div class="tags">
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/2012/07/21/hyperlink-in-fb-feed-dialog/" itemprop="url">於Facebook Feed中加入連結</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p><img src="https://lh3.googleusercontent.com/-PabNCzexjNY/T-L1xE28K2I/AAAAAAAAAnM/j_ghq84k9os/s514/feed-dialog.png" alt="image" /></p>
+
+<p>當想要在Facebook Feed加入連結的時候，會發現description只能是純文字，如果加入HTML TAG就會自動被濾掉，官方文件中沒有寫明如何在description加入連結，稍微Google了一下才找到解法，原來是要用properties！</p>
+
+<h2>properties</h2>
+
+<blockquote><p>A JSON object of key/value pairs which will appear in the stream attachment beneath the description, with each property on its own line. Keys must be strings, and values can be either strings or JSON objects with the keys text and href.</p></blockquote>
+
+<h2>Example</h2>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">FB</span><span class="p">.</span><span class="nx">ui</span><span class="p">({</span>
+</span><span class='line'>  <span class="nx">method</span><span class="o">:</span> <span class="s1">&#39;feed&#39;</span><span class="p">,</span>
+</span><span class='line'>  <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;凱撒大飯店&#39;</span><span class="p">,</span>
+</span><span class='line'>  <span class="nx">link</span><span class="o">:</span> <span class="s1">&#39;http://www.caesarpark.com.tw/&#39;</span><span class="p">,</span>
+</span><span class='line'>  <span class="nx">caption</span><span class="o">:</span> <span class="s1">&#39;Check this hotel&#39;</span><span class="p">,</span>
+</span><span class='line'>  <span class="nx">description</span><span class="o">:</span> <span class="s1">&#39;The hotel is located in 台灣台北市 and has rating of 3.5.&#39;</span><span class="p">,</span>
+</span><span class='line'>  <span class="nx">properties</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>    <span class="s1">&#39;Find the Hotel Reviews&#39;</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>      <span class="s1">&#39;text&#39;</span><span class="o">:</span> <span class="s1">&#39;here&#39;</span><span class="p">,</span>
+</span><span class='line'>      <span class="s1">&#39;href&#39;</span><span class="o">:</span> <span class="s1">&#39;http://goo.gl/qaIdm&#39;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">},</span> <span class="nx">callback</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Reference</h2>
+
+<ul>
+<li><a href="https://developers.facebook.com/docs/reference/dialogs/feed/">Feed Dialog &ndash; Facebook Developer</a></li>
+<li><a href="http://fbdevwiki.com/wiki/FB.ui">FB.ui &ndash; FbDevWiki</a></li>
+</ul>
+
+
+		
+		
+	</div>
+
+</article>
+
+</div>
+<nav id="pagenavi">
+    
+        <a href="/" class="prev">Prev</a>
+    
+    
+    <div class="center"><a href="/blog/archives">Blog Archives</a></div>
+</nav></div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2013 - ciffel -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'lifehacking';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-38619920-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>

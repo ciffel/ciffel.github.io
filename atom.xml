@@ -1,119 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE HTML>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Shu@Note</title>
-	<meta name="author" content="ciffel">
-
-	
-	<meta name="description" content="Apr 28th, 2013 Justpaste - a Convenient Image Uploader 最近在CNA micro conf.跟大家分享我做的Justpaste，這是一個讀取剪貼簿內容並自動上傳到imgur的服務，透過複製貼上就可以快速的分享影片截圖。 URL: http &hellip;">
-	
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link href="/atom.xml" rel="alternate" title="Shu@Note" type="application/atom+xml">
-	
-	<link rel="canonical" href="http://blog.shume.in/">
-	<link href="/favicon.png" rel="shortcut icon">
-	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
-	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-</head>
-
-
-<body>
-	<div class="container">
-		<div class="left-col">
-			<div class="intrude-less">
-			<header id="header" class="inner"><div class="profilepic">
-	<script src="/javascripts/md5.js"></script>
-	<script type="text/javascript">
-		$(function(){
-			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("ciffel@gmail.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
-		});
-	</script>
-</div>
-<hgroup>
-  <h1><a href="/">Shu@Note</a></h1>
-  
-</hgroup>
-
-<p class="subtitle"></p>
-<nav id="main-nav"><ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
-
-
-<section class="aboutme">
-  <p>
-    Hello, World!
-  </p>
-</section>
-</nav>
-<nav id="sub-nav">
-	<div class="social">
-		
-		
-		
-		
-		<a class="github" href="https://github.com/ciffel" title="GitHub">GitHub</a>
-		
-		
-		
-		
-		
-		
-		
-		
-		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
-		
-	</div>
-</nav>
-</header>				
-			</div>
-		</div>	
-		<div class="mid-col">
-			
-				
-			
-			<div class="mid-col-container">
-				<div id="content" class="inner">
-<div itemscope itemtype="http://schema.org/Blog">
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
+  <title><![CDATA[Shu@Note]]></title>
+  <link href="http://blog.shume.in/atom.xml" rel="self"/>
+  <link href="http://blog.shume.in/"/>
+  <updated>2013-07-05T18:54:29+08:00</updated>
+  <id>http://blog.shume.in/</id>
+  <author>
+    <name><![CDATA[ciffel]]></name>
+    <email><![CDATA[ciffel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-
-
-<time datetime="2013-04-28T05:28:25+08:00" data-updated="true" itemprop="datePublished">Apr 28<span>th</span>, 2013</time></div>
-		<div class="tags">
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/2013/04/28/justpaste/" itemprop="url">Justpaste - a Convenient Image Uploader</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p>最近在CNA micro conf.跟大家分享我做的<a href="http://justpaste.shume.in/">Justpaste</a>，這是一個讀取剪貼簿內容並自動上傳到imgur的服務，透過複製貼上就可以快速的分享影片截圖。</p>
+  <entry>
+    <title type="html"><![CDATA[Justpaste - A convenient image uploader]]></title>
+    <link href="http://blog.shume.in/2013/04/28/justpaste/"/>
+    <updated>2013-04-28T05:28:25+08:00</updated>
+    <id>http://blog.shume.in/2013/04/28/justpaste</id>
+    <content type="html"><![CDATA[<p>最近在CNA micro conf.跟大家分享我做的<a href="http://justpaste.shume.in/">Justpaste</a>，這是一個讀取剪貼簿內容並自動上傳到imgur的服務，透過複製貼上就可以快速的分享影片截圖。</p>
 
 <ul>
 <li>URL: <a href="http://justpaste.shume.in/">http://justpaste.shume.in/</a></li>
@@ -124,39 +29,17 @@
 <br />
 
 
-<script async class="speakerdeck-embed" data-id="f9a5da308fe70130feae1231381d79e1" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="f9a5da308fe70130feae1231381d79e1" data-ratio="1.33333333333333" src="http://blog.shume.in//speakerdeck.com/assets/embed.js"></script>
 
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
+]]></content>
+  </entry>
   
-
-
-<time datetime="2013-03-11T23:10:57+08:00" data-updated="true" itemprop="datePublished">Mar 11<span>th</span>, 2013</time></div>
-		<div class="tags">
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/2013/03/11/cant-open-downloaded-files-from-chrome/" itemprop="url">MacOS無法開啟Chrome下載的檔案</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p>在MacOS 10.8.2的Google Chrome，下載檔案後，無法從底下的下載列直接點選檔案來開啟，這時候只需要重開一個process就可以了。</p>
+  <entry>
+    <title type="html"><![CDATA[MacOS無法開啟Chrome下載的檔案]]></title>
+    <link href="http://blog.shume.in/2013/03/11/cant-open-downloaded-files-from-chrome/"/>
+    <updated>2013-03-11T23:10:57+08:00</updated>
+    <id>http://blog.shume.in/2013/03/11/cant-open-downloaded-files-from-chrome</id>
+    <content type="html"><![CDATA[<p>在MacOS 10.8.2的Google Chrome，下載檔案後，無法從底下的下載列直接點選檔案來開啟，這時候只需要重開一個process就可以了。</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo killall -KILL appleeventsd</span></code></pre></td></tr></table></div></figure>
@@ -165,37 +48,15 @@
 <h2>Reference</h2>
 
 <p><a href="https://productforums.google.com/forum/?fromgroups=#!topic/chrome/bPlCcZdfc_4">Latest google chrome on Mountion Lion can&rsquo;t open downloaded files from the interface</a></p>
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
+]]></content>
+  </entry>
   
-
-
-<time datetime="2012-12-12T23:08:11+08:00" data-updated="true" itemprop="datePublished">Dec 12<span>th</span>, 2012</time></div>
-		<div class="tags">
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/2012/12/12/ecourse_fix_google_chrome/" itemprop="url">Ecourse Fix - Google Chrome Extentsion</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<h2>說明</h2>
+  <entry>
+    <title type="html"><![CDATA[Ecourse Fix - Google Chrome Extentsion]]></title>
+    <link href="http://blog.shume.in/2012/12/12/ecourse_fix_google_chrome/"/>
+    <updated>2012-12-12T23:08:11+08:00</updated>
+    <id>http://blog.shume.in/2012/12/12/ecourse_fix_google_chrome</id>
+    <content type="html"><![CDATA[<h2>說明</h2>
 
 <p>由於中正大學的課程教學系統在Google Chrome上有相容性問題，會導致功能選單與課程教材連結無效，所以才有這個擴充套件的出現。</p>
 
@@ -215,37 +76,15 @@
 <h2>Issues</h2>
 
 <p>若有使用上任何問題，可以透過評論或留言回報</p>
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
+]]></content>
+  </entry>
   
-
-
-<time datetime="2012-12-01T23:03:56+08:00" data-updated="true" itemprop="datePublished">Dec 1<span>st</span>, 2012</time></div>
-		<div class="tags">
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/2012/12/01/rvm_install_passenger_and_nginx/" itemprop="url">RVM Install Passenger and_Nginx</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p>OS: Ubuntu 12.04.1 大致上是參照<a href="http://ruby-china.org/wiki/mac-nginx-passenger-rails">這篇</a>的做法</p>
+  <entry>
+    <title type="html"><![CDATA[RVM install Passenger and_Nginx]]></title>
+    <link href="http://blog.shume.in/2012/12/01/rvm_install_passenger_and_nginx/"/>
+    <updated>2012-12-01T23:03:56+08:00</updated>
+    <id>http://blog.shume.in/2012/12/01/rvm_install_passenger_and_nginx</id>
+    <content type="html"><![CDATA[<p>OS: Ubuntu 12.04.1 大致上是參照<a href="http://ruby-china.org/wiki/mac-nginx-passenger-rails">這篇</a>的做法</p>
 
 <p>先用gem安裝Passenger</p>
 
@@ -280,37 +119,15 @@
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo ln -s /usr/local/nginx/sbin/nginx /usr/sbin/</span></code></pre></td></tr></table></div></figure>
 
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
+]]></content>
+  </entry>
   
-
-
-<time datetime="2012-11-15T22:57:07+08:00" data-updated="true" itemprop="datePublished">Nov 15<span>th</span>, 2012</time></div>
-		<div class="tags">
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/2012/11/15/mosh-usage/" itemprop="url">Mosh Usage</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p>Mosh介紹</p>
+  <entry>
+    <title type="html"><![CDATA[Mosh usage]]></title>
+    <link href="http://blog.shume.in/2012/11/15/mosh-usage/"/>
+    <updated>2012-11-15T22:57:07+08:00</updated>
+    <id>http://blog.shume.in/2012/11/15/mosh-usage</id>
+    <content type="html"><![CDATA[<p>Mosh介紹</p>
 
 <ul>
 <li><a href="http://blog.lyhdev.com/2012/05/moshmobile-shell-ssh.html">Mosh（mobile shell）取代 SSH 的遠端終端機連線工具</a></li>
@@ -337,37 +154,15 @@
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>compdef mosh=ssh</span></code></pre></td></tr></table></div></figure>
 
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
+]]></content>
+  </entry>
   
-
-
-<time datetime="2012-09-04T22:54:55+08:00" data-updated="true" itemprop="datePublished">Sep 4<span>th</span>, 2012</time></div>
-		<div class="tags">
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/2012/09/04/ssh-alias/" itemprop="url">SSH Alias</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p>在terminal底下使用ssh打port,帳號,位置總是令人厭煩</p>
+  <entry>
+    <title type="html"><![CDATA[SSH Alias]]></title>
+    <link href="http://blog.shume.in/2012/09/04/ssh-alias/"/>
+    <updated>2012-09-04T22:54:55+08:00</updated>
+    <id>http://blog.shume.in/2012/09/04/ssh-alias</id>
+    <content type="html"><![CDATA[<p>在terminal底下使用ssh打port,帳號,位置總是令人厭煩</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>$ ssh -p 3357 shume@machinex.example.com</span></code></pre></td></tr></table></div></figure>
@@ -404,37 +199,15 @@
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>$ cat ~/.ssh/id_rsa.pub | ssh m1 'cat &gt;&gt; ~/.ssh/authorized_keys'</span></code></pre></td></tr></table></div></figure>
 
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
+]]></content>
+  </entry>
   
-
-
-<time datetime="2012-09-04T22:51:44+08:00" data-updated="true" itemprop="datePublished">Sep 4<span>th</span>, 2012</time></div>
-		<div class="tags">
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/2012/09/04/nat-configuration-in-vmware-player-5/" itemprop="url">NAT Configuration in VMware Player 5</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<h2>Before VMware Player 5</h2>
+  <entry>
+    <title type="html"><![CDATA[NAT Configuration in VMware Player 5]]></title>
+    <link href="http://blog.shume.in/2012/09/04/nat-configuration-in-vmware-player-5/"/>
+    <updated>2012-09-04T22:51:44+08:00</updated>
+    <id>http://blog.shume.in/2012/09/04/nat-configuration-in-vmware-player-5</id>
+    <content type="html"><![CDATA[<h2>Before VMware Player 5</h2>
 
 <p>在Windows中VMware需要NAT Port Forwarding，可以透過VMware內建的程式vmnetcfg來進行設定，但這程式並不在預設安裝的項目裡面，所以在VMware Player的安裝目錄中是找不到的。</p>
 
@@ -457,37 +230,15 @@
 <h2>Reference</h2>
 
 <p><a href="http://communities.vmware.com/thread/415408">Whither VMware Player 5.0 VMNetCfg.exe?</a></p>
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
+]]></content>
+  </entry>
   
-
-
-<time datetime="2012-08-30T22:49:42+08:00" data-updated="true" itemprop="datePublished">Aug 30<span>th</span>, 2012</time></div>
-		<div class="tags">
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/2012/08/30/compile-qt-program/" itemprop="url">編譯Qt程式: Q_OBJECT</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p>當程式裡需要使用signal與slot時，只要參閱官方文件就可以知道我們必須在Class上方加入Q_OBJECT這個macro。</p>
+  <entry>
+    <title type="html"><![CDATA[編譯Qt程式: Q_OBJECT]]></title>
+    <link href="http://blog.shume.in/2012/08/30/compile-qt-program/"/>
+    <updated>2012-08-30T22:49:42+08:00</updated>
+    <id>http://blog.shume.in/2012/08/30/compile-qt-program</id>
+    <content type="html"><![CDATA[<p>當程式裡需要使用signal與slot時，只要參閱官方文件就可以知道我們必須在Class上方加入Q_OBJECT這個macro。</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -512,37 +263,15 @@
 <p>當我在撰寫一支小小的測試程式時，我將class的宣告與implementation都寫在test.cpp，依照上面的操作，希望qmake產生moc時卻無法成功。</p>
 
 <p>自行摸索之後的解法是，將.h與.cpp分離，這樣qmake就會發現有macro的存在，就可以成功編譯了。</p>
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
+]]></content>
+  </entry>
   
-
-
-<time datetime="2012-08-29T22:46:49+08:00" data-updated="true" itemprop="datePublished">Aug 29<span>th</span>, 2012</time></div>
-		<div class="tags">
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/2012/08/29/install-qt-on-macosx/" itemprop="url">Install Qt on Mac OSX</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p>需要Qt的開發環境但是又不想使用Qt Creator與其他肥大的夥伴，在Mac上我選擇使用最簡單的homebrew來安裝。</p>
+  <entry>
+    <title type="html"><![CDATA[Install Qt on Mac OSX]]></title>
+    <link href="http://blog.shume.in/2012/08/29/install-qt-on-macosx/"/>
+    <updated>2012-08-29T22:46:49+08:00</updated>
+    <id>http://blog.shume.in/2012/08/29/install-qt-on-macosx</id>
+    <content type="html"><![CDATA[<p>需要Qt的開發環境但是又不想使用Qt Creator與其他肥大的夥伴，在Mac上我選擇使用最簡單的homebrew來安裝。</p>
 
 <p>安裝Qt SDK</p>
 
@@ -571,37 +300,15 @@
 
 
 <p>這樣就快速的編譯完所撰寫的Qt Application了</p>
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
+]]></content>
+  </entry>
   
-
-
-<time datetime="2012-08-14T22:44:58+08:00" data-updated="true" itemprop="datePublished">Aug 14<span>th</span>, 2012</time></div>
-		<div class="tags">
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/2012/08/14/uninstall-macosx-pkg/" itemprop="url">刪除Mac OS X下的安裝Package</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p>在Mac OS X常會見到一種安裝檔.pkg，行為像Windows底下的安裝檔，但是想要移除安裝的內容時，檔案可能散佈在各個資料夾，就不像以.dmg安裝的只要把Applications資料夾中的內容刪除即可。</p>
+  <entry>
+    <title type="html"><![CDATA[刪除Mac OS X下的安裝Package]]></title>
+    <link href="http://blog.shume.in/2012/08/14/uninstall-macosx-pkg/"/>
+    <updated>2012-08-14T22:44:58+08:00</updated>
+    <id>http://blog.shume.in/2012/08/14/uninstall-macosx-pkg</id>
+    <content type="html"><![CDATA[<p>在Mac OS X常會見到一種安裝檔.pkg，行為像Windows底下的安裝檔，但是想要移除安裝的內容時，檔案可能散佈在各個資料夾，就不像以.dmg安裝的只要把Applications資料夾中的內容刪除即可。</p>
 
 <p>Google了一下還是有解的</p>
 
@@ -627,68 +334,61 @@
 </span><span class='line'><span class="k">done</span>
 </span></code></pre></td></tr></table></div></figure>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[於Facebook Feed中加入連結]]></title>
+    <link href="http://blog.shume.in/2012/07/21/hyperlink-in-fb-feed-dialog/"/>
+    <updated>2012-07-21T22:34:17+08:00</updated>
+    <id>http://blog.shume.in/2012/07/21/hyperlink-in-fb-feed-dialog</id>
+    <content type="html"><![CDATA[<p><img src="https://lh3.googleusercontent.com/-PabNCzexjNY/T-L1xE28K2I/AAAAAAAAAnM/j_ghq84k9os/s514/feed-dialog.png" alt="image" /></p>
 
-		
-		
-	</div>
+<p>當想要在Facebook Feed加入連結的時候，會發現description只能是純文字，如果加入HTML TAG就會自動被濾掉，官方文件中沒有寫明如何在description加入連結，稍微Google了一下才找到解法，原來是要用properties！</p>
 
-</article>
+<h2>properties</h2>
 
-</div>
-<nav id="pagenavi">
-    
-    
-        <a href="/page/2/" class="next">Next</a>
-    
-    <div class="center"><a href="/blog/archives">Blog Archives</a></div>
-</nav></div>
-			</div>
-			<footer id="footer" class="inner"><p>
-  Copyright &copy; 2013 - ciffel -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
+<blockquote><p>A JSON object of key/value pairs which will appear in the stream attachment beneath the description, with each property on its own line. Keys must be strings, and values can be either strings or JSON objects with the keys text and href.</p></blockquote>
 
-Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
-			<script src="/javascripts/slash.js"></script>
-<script src="/javascripts/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-(function($){
-	$('.fancybox').fancybox();
-})(jQuery);
-</script> <!-- Delete or comment this line to disable Fancybox -->
+<h2>Example</h2>
 
-
-<script type="text/javascript">
-      var disqus_shortname = 'lifehacking';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
-
-
-
-	<script type="text/javascript">
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-38619920-1']);
-		_gaq.push(['_trackPageview']);
-
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
-	</script>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">FB</span><span class="p">.</span><span class="nx">ui</span><span class="p">({</span>
+</span><span class='line'>  <span class="nx">method</span><span class="o">:</span> <span class="s1">&#39;feed&#39;</span><span class="p">,</span>
+</span><span class='line'>  <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;凱撒大飯店&#39;</span><span class="p">,</span>
+</span><span class='line'>  <span class="nx">link</span><span class="o">:</span> <span class="s1">&#39;http://www.caesarpark.com.tw/&#39;</span><span class="p">,</span>
+</span><span class='line'>  <span class="nx">caption</span><span class="o">:</span> <span class="s1">&#39;Check this hotel&#39;</span><span class="p">,</span>
+</span><span class='line'>  <span class="nx">description</span><span class="o">:</span> <span class="s1">&#39;The hotel is located in 台灣台北市 and has rating of 3.5.&#39;</span><span class="p">,</span>
+</span><span class='line'>  <span class="nx">properties</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>    <span class="s1">&#39;Find the Hotel Reviews&#39;</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>      <span class="s1">&#39;text&#39;</span><span class="o">:</span> <span class="s1">&#39;here&#39;</span><span class="p">,</span>
+</span><span class='line'>      <span class="s1">&#39;href&#39;</span><span class="o">:</span> <span class="s1">&#39;http://goo.gl/qaIdm&#39;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">},</span> <span class="nx">callback</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
+<h2>Reference</h2>
 
+<ul>
+<li><a href="https://developers.facebook.com/docs/reference/dialogs/feed/">Feed Dialog &ndash; Facebook Developer</a></li>
+<li><a href="http://fbdevwiki.com/wiki/FB.ui">FB.ui &ndash; FbDevWiki</a></li>
+</ul>
 
-		</div>
-	</div>
-</body>
-</html>
+]]></content>
+  </entry>
+  
+</feed>
