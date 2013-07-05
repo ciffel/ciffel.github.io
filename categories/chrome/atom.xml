@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Chrome | Shu@Note]]></title>
+  <link href="http://ciffel.github.io/categories/chrome/atom.xml" rel="self"/>
+  <link href="http://ciffel.github.io/"/>
+  <updated>2013-07-05T20:09:23+08:00</updated>
+  <id>http://ciffel.github.io/</id>
+  <author>
+    <name><![CDATA[ciffel]]></name>
+    <email><![CDATA[ciffel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[MacOS無法開啟Chrome下載的檔案]]></title>
+    <link href="http://ciffel.github.io/2013/03/11/cant-open-downloaded-files-from-chrome/"/>
+    <updated>2013-03-11T23:10:57+08:00</updated>
+    <id>http://ciffel.github.io/2013/03/11/cant-open-downloaded-files-from-chrome</id>
+    <content type="html"><![CDATA[<p>在MacOS 10.8.2的Google Chrome，下載檔案後，無法從底下的下載列直接點選檔案來開啟，這時候只需要重開一個process就可以了。</p>
+
+<p><code>
+$ sudo killall -KILL appleeventsd
+</code></p>
+
+<h2>Reference</h2>
+
+<p><a href="https://productforums.google.com/forum/?fromgroups=#!topic/chrome/bPlCcZdfc_4">Latest google chrome on Mountion Lion can&rsquo;t open downloaded files from the interface</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ecourse Fix - Google Chrome Extentsion]]></title>
+    <link href="http://ciffel.github.io/2012/12/12/ecourse_fix_google_chrome/"/>
+    <updated>2012-12-12T23:08:11+08:00</updated>
+    <id>http://ciffel.github.io/2012/12/12/ecourse_fix_google_chrome</id>
+    <content type="html"><![CDATA[<h2>說明</h2>
+
+<p>由於中正大學的課程教學系統在Google Chrome上有相容性問題，會導致功能選單與課程教材連結無效，所以才有這個擴充套件的出現。</p>
+
+<h3>修正項目</h3>
+
+<ol>
+<li>選單無效修正</li>
+<li>標題修正</li>
+<li>編碼修正</li>
+</ol>
+
+
+<h2>連結</h2>
+
+<p><a href="https://chrome.google.com/webstore/detail/ecourse-fix/ikmpbfojdbnhnglddfmhilocodiecooe">點此詳細希望</a></p>
+
+<h2>Issues</h2>
+
+<p>若有使用上任何問題，可以透過評論或留言回報</p>
+]]></content>
+  </entry>
+  
+</feed>

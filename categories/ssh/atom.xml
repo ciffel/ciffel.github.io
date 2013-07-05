@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ssh | Shu@Note]]></title>
+  <link href="http://ciffel.github.io/categories/ssh/atom.xml" rel="self"/>
+  <link href="http://ciffel.github.io/"/>
+  <updated>2013-07-05T20:09:23+08:00</updated>
+  <id>http://ciffel.github.io/</id>
+  <author>
+    <name><![CDATA[ciffel]]></name>
+    <email><![CDATA[ciffel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Mosh usage]]></title>
+    <link href="http://ciffel.github.io/2012/11/15/mosh-usage/"/>
+    <updated>2012-11-15T22:57:07+08:00</updated>
+    <id>http://ciffel.github.io/2012/11/15/mosh-usage</id>
+    <content type="html"><![CDATA[<p>Mosh介紹</p>
+
+<ul>
+<li><a href="http://blog.lyhdev.com/2012/05/moshmobile-shell-ssh.html">Mosh（mobile shell）取代 SSH 的遠端終端機連線工具</a></li>
+<li><a href="http://blog.gslin.org/archives/2012/10/10/3004/%E6%8A%8A-ssh-%E6%8F%9B%E6%88%90-mosh/">把 SSH 換成 Mosh</a></li>
+</ul>
+
+
+<p>各平台安裝可參照<a href="http://mosh.mit.edu/">官方網站的說明</a></p>
+
+<p>不過在ubuntu 12.10中，安裝完python-software-properties後仍沒辦法執行add-apt-repository，後來安裝software-properties-common就可以了</p>
+
+<p><code>
+$ sudo add-apt-repository ppa:keithw/mosh
+$ sudo apt-get install software-properties-common
+$ sudo apt-get update
+$ sudo apt-get install mosh
+</code></p>
+
+<p>使用zsh補完ssh hostname，在.zshrc中設定</p>
+
+<p><code>
+compdef mosh=ssh
+</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SSH Alias]]></title>
+    <link href="http://ciffel.github.io/2012/09/04/ssh-alias/"/>
+    <updated>2012-09-04T22:54:55+08:00</updated>
+    <id>http://ciffel.github.io/2012/09/04/ssh-alias</id>
+    <content type="html"><![CDATA[<p>在terminal底下使用ssh打port,帳號,位置總是令人厭煩</p>
+
+<p><code>
+$ ssh -p 3357 shume@machinex.example.com
+</code></p>
+
+<p>這時候使用SSH alias就可以節省大量時間</p>
+
+<h2>~/.ssh/config</h2>
+
+<p>編輯<code>~/.ssh/config</code>(若是不存在就新增)</p>
+
+<p><code>
+host m1
+  hostname machinex.example.com
+  user shume
+  port 3357
+</code></p>
+
+<p>(不需要的話，user跟port都可以省略)</p>
+
+<p>設定完config之後，開啟ssh只需要下</p>
+
+<p><code>
+$ ssh m1
+</code></p>
+
+<p>如果搭配public key使用，連密碼都不需要了</p>
+
+<h2>將public key上傳</h2>
+
+<p><code>
+$ cat ~/.ssh/id_rsa.pub | ssh m1 'cat &gt;&gt; ~/.ssh/authorized_keys'
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>

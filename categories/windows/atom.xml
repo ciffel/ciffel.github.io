@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Windows | Shu@Note]]></title>
+  <link href="http://ciffel.github.io/categories/windows/atom.xml" rel="self"/>
+  <link href="http://ciffel.github.io/"/>
+  <updated>2013-07-05T20:09:23+08:00</updated>
+  <id>http://ciffel.github.io/</id>
+  <author>
+    <name><![CDATA[ciffel]]></name>
+    <email><![CDATA[ciffel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[NAT Configuration in VMware Player 5]]></title>
+    <link href="http://ciffel.github.io/2012/09/04/nat-configuration-in-vmware-player-5/"/>
+    <updated>2012-09-04T22:51:44+08:00</updated>
+    <id>http://ciffel.github.io/2012/09/04/nat-configuration-in-vmware-player-5</id>
+    <content type="html"><![CDATA[<h2>Before VMware Player 5</h2>
+
+<p>在Windows中VMware需要NAT Port Forwarding，可以透過VMware內建的程式vmnetcfg來進行設定，但這程式並不在預設安裝的項目裡面，所以在VMware Player的安裝目錄中是找不到的。</p>
+
+<p>我們可以以command line將安裝檔解開</p>
+
+<p>```</p>
+
+<blockquote><p>VMware-player-3.0.0-197124.exe /e .\extract_folder
+```</p></blockquote>
+
+<p>在extract_folder資料夾中找到network.cab，提取其中的vmnetcfg.exe到VMware Player的資料夾，使用vmnetcfg.exe就可以進行網路相關的設定了。</p>
+
+<h2>VMware Player 5</h2>
+
+<p>新版的VMware Player，在解開安裝檔後會發現，沒有network.cab，vmnetcfg.exe已經不在安裝檔中了。為了取得vmnetcfg，先下載VMware Workstation，解開安裝檔中後，找到core.cab，就可以從中找到vmnetcfg.exe了。</p>
+
+<h2>備註</h2>
+
+<p>我更新5.0.1後發現原來的vmnetcfg.exe無法使用，所以版本更新後需要從Workstation版本中重新解出新的來用。</p>
+
+<h2>Reference</h2>
+
+<p><a href="http://communities.vmware.com/thread/415408">Whither VMware Player 5.0 VMNetCfg.exe?</a></p>
+]]></content>
+  </entry>
+  
+</feed>

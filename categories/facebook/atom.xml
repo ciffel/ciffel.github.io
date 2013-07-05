@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Facebook | Shu@Note]]></title>
+  <link href="http://ciffel.github.io/categories/facebook/atom.xml" rel="self"/>
+  <link href="http://ciffel.github.io/"/>
+  <updated>2013-07-05T20:09:23+08:00</updated>
+  <id>http://ciffel.github.io/</id>
+  <author>
+    <name><![CDATA[ciffel]]></name>
+    <email><![CDATA[ciffel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[於Facebook Feed中加入連結]]></title>
+    <link href="http://ciffel.github.io/2012/07/21/hyperlink-in-fb-feed-dialog/"/>
+    <updated>2012-07-21T22:34:17+08:00</updated>
+    <id>http://ciffel.github.io/2012/07/21/hyperlink-in-fb-feed-dialog</id>
+    <content type="html"><![CDATA[<p><img src="https://lh3.googleusercontent.com/-PabNCzexjNY/T-L1xE28K2I/AAAAAAAAAnM/j_ghq84k9os/s514/feed-dialog.png" alt="image" /></p>
+
+<p>當想要在Facebook Feed加入連結的時候，會發現description只能是純文字，如果加入HTML TAG就會自動被濾掉，官方文件中沒有寫明如何在description加入連結，稍微Google了一下才找到解法，原來是要用properties！</p>
+
+<h2>properties</h2>
+
+<blockquote><p>A JSON object of key/value pairs which will appear in the stream attachment beneath the description, with each property on its own line. Keys must be strings, and values can be either strings or JSON objects with the keys text and href.</p></blockquote>
+
+<h2>Example</h2>
+
+<p>```javascript
+FB.ui({
+  method: &lsquo;feed&rsquo;,
+  name: &lsquo;凱撒大飯店&rsquo;,
+  link: &lsquo;<a href="http://www.caesarpark.com.tw/">http://www.caesarpark.com.tw/</a>&rsquo;,
+  caption: &lsquo;Check this hotel&rsquo;,
+  description: &lsquo;The hotel is located in 台灣台北市 and has rating of 3.5.&rsquo;,
+  properties: {</p>
+
+<pre><code>'Find the Hotel Reviews': {
+  'text': 'here',
+  'href': 'http://goo.gl/qaIdm'
+}
+</code></pre>
+
+<p>  }
+}, callback);
+```</p>
+
+<h2>Reference</h2>
+
+<ul>
+<li><a href="https://developers.facebook.com/docs/reference/dialogs/feed/">Feed Dialog &ndash; Facebook Developer</a></li>
+<li><a href="http://fbdevwiki.com/wiki/FB.ui">FB.ui &ndash; FbDevWiki</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

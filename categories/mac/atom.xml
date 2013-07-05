@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Mac | Shu@Note]]></title>
+  <link href="http://ciffel.github.io/categories/mac/atom.xml" rel="self"/>
+  <link href="http://ciffel.github.io/"/>
+  <updated>2013-07-05T20:09:23+08:00</updated>
+  <id>http://ciffel.github.io/</id>
+  <author>
+    <name><![CDATA[ciffel]]></name>
+    <email><![CDATA[ciffel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[MacOS無法開啟Chrome下載的檔案]]></title>
+    <link href="http://ciffel.github.io/2013/03/11/cant-open-downloaded-files-from-chrome/"/>
+    <updated>2013-03-11T23:10:57+08:00</updated>
+    <id>http://ciffel.github.io/2013/03/11/cant-open-downloaded-files-from-chrome</id>
+    <content type="html"><![CDATA[<p>在MacOS 10.8.2的Google Chrome，下載檔案後，無法從底下的下載列直接點選檔案來開啟，這時候只需要重開一個process就可以了。</p>
+
+<p><code>
+$ sudo killall -KILL appleeventsd
+</code></p>
+
+<h2>Reference</h2>
+
+<p><a href="https://productforums.google.com/forum/?fromgroups=#!topic/chrome/bPlCcZdfc_4">Latest google chrome on Mountion Lion can&rsquo;t open downloaded files from the interface</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Install Qt on Mac OSX]]></title>
+    <link href="http://ciffel.github.io/2012/08/29/install-qt-on-macosx/"/>
+    <updated>2012-08-29T22:46:49+08:00</updated>
+    <id>http://ciffel.github.io/2012/08/29/install-qt-on-macosx</id>
+    <content type="html"><![CDATA[<p>需要Qt的開發環境但是又不想使用Qt Creator與其他肥大的夥伴，在Mac上我選擇使用最簡單的homebrew來安裝。</p>
+
+<p>安裝Qt SDK
+<code>
+$ brew install qt
+</code></p>
+
+<p>新增project資料夾，開始編輯
+<code>
+$ mkdir qtdemo
+$ cd qtdemo
+$ vim hello.cpp
+</code></p>
+
+<p>編譯時，使用qmake來產生Makefile
+<code>
+$ qmake -project
+$ qmake
+$ make
+</code></p>
+
+<p>這樣就快速的編譯完所撰寫的Qt Application了</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[刪除Mac OS X下的安裝Package]]></title>
+    <link href="http://ciffel.github.io/2012/08/14/uninstall-macosx-pkg/"/>
+    <updated>2012-08-14T22:44:58+08:00</updated>
+    <id>http://ciffel.github.io/2012/08/14/uninstall-macosx-pkg</id>
+    <content type="html"><![CDATA[<p>在Mac OS X常會見到一種安裝檔.pkg，行為像Windows底下的安裝檔，但是想要移除安裝的內容時，檔案可能散佈在各個資料夾，就不像以.dmg安裝的只要把Applications資料夾中的內容刪除即可。</p>
+
+<p>Google了一下還是有解的</p>
+
+<p>列出所有安裝的packages:</p>
+
+<p><code>
+$ pkgutil --pkgs
+</code></p>
+
+<p>可以配合grep來找到要移除的package</p>
+
+<p>使用下面的shell script來移除所有檔案
+```bash
+pkgutil &mdash;files $1 | sed -e &ldquo;s/^/\//&rdquo; | sed -n &lsquo;1!G;h;$p&rsquo; | while read line
+do</p>
+
+<pre><code>rm "$line" 2&gt; /dev/null;
+rmdir "$line" 2&gt; /dev/null;
+</code></pre>
+
+<p>done
+```</p>
+]]></content>
+  </entry>
+  
+</feed>

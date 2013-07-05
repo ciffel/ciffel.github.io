@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Qt | Shu@Note]]></title>
+  <link href="http://ciffel.github.io/categories/qt/atom.xml" rel="self"/>
+  <link href="http://ciffel.github.io/"/>
+  <updated>2013-07-05T20:09:23+08:00</updated>
+  <id>http://ciffel.github.io/</id>
+  <author>
+    <name><![CDATA[ciffel]]></name>
+    <email><![CDATA[ciffel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[編譯Qt程式: Q_OBJECT]]></title>
+    <link href="http://ciffel.github.io/2012/08/30/compile-qt-program/"/>
+    <updated>2012-08-30T22:49:42+08:00</updated>
+    <id>http://ciffel.github.io/2012/08/30/compile-qt-program</id>
+    <content type="html"><![CDATA[<p>當程式裡需要使用signal與slot時，只要參閱官方文件就可以知道我們必須在Class上方加入Q_OBJECT這個macro。</p>
+
+<p>```cpp
+class MainWindow : public QMainWindow {</p>
+
+<pre><code>Q_OBJECT
+</code></pre>
+
+<p>```</p>
+
+<h2>常見錯誤</h2>
+
+<p>此時，make會出現
+<code>
+undefined reference to `vtable for MainWindow'
+</code></p>
+
+<p>原因是加入Q_OBJECT，qmake沒有發現多了這個marco，make時沒有幫我們產生moc檔，此時再執行qmake一次即可</p>
+
+<h2>分離宣告和實作</h2>
+
+<p>當我在撰寫一支小小的測試程式時，我將class的宣告與implementation都寫在test.cpp，依照上面的操作，希望qmake產生moc時卻無法成功。</p>
+
+<p>自行摸索之後的解法是，將.h與.cpp分離，這樣qmake就會發現有macro的存在，就可以成功編譯了。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Install Qt on Mac OSX]]></title>
+    <link href="http://ciffel.github.io/2012/08/29/install-qt-on-macosx/"/>
+    <updated>2012-08-29T22:46:49+08:00</updated>
+    <id>http://ciffel.github.io/2012/08/29/install-qt-on-macosx</id>
+    <content type="html"><![CDATA[<p>需要Qt的開發環境但是又不想使用Qt Creator與其他肥大的夥伴，在Mac上我選擇使用最簡單的homebrew來安裝。</p>
+
+<p>安裝Qt SDK
+<code>
+$ brew install qt
+</code></p>
+
+<p>新增project資料夾，開始編輯
+<code>
+$ mkdir qtdemo
+$ cd qtdemo
+$ vim hello.cpp
+</code></p>
+
+<p>編譯時，使用qmake來產生Makefile
+<code>
+$ qmake -project
+$ qmake
+$ make
+</code></p>
+
+<p>這樣就快速的編譯完所撰寫的Qt Application了</p>
+]]></content>
+  </entry>
+  
+</feed>
