@@ -7,7 +7,7 @@
 	<meta name="author" content="ciffel">
 
 	
-	<meta name="description" content="Jul 21st, 2012 於Facebook Feed中加入連結 當想要在Facebook Feed加入連結的時候，會發現description只能是純文字，如果加入HTML TAG就會自動被濾掉，官方文件中沒有寫明如何在description加入連結，稍微Google了一下才找到解法， &hellip;">
+	<meta name="description" content="Aug 14th, 2012 刪除Mac OS X下的安裝Package 在Mac OS X常會見到一種安裝檔.pkg，行為像Windows底下的安裝檔，但是想要移除安裝的內容時，檔案可能散佈在各個資料夾，就不像以.dmg安裝的只要把Applications資料夾中的內容刪除即可。 &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -17,7 +17,7 @@
 
 	<link href="/atom.xml" rel="alternate" title="Shu@Note" type="application/atom+xml">
 	
-	<link rel="canonical" href="http://blog.shume.in/page/2/">
+	<link rel="canonical" href="http://ciffel.github.io/page/2/">
 	<link href="/favicon.png" rel="shortcut icon">
 	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -89,6 +89,62 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-14T22:44:58+08:00" data-updated="true" itemprop="datePublished">Aug 14<span>th</span>, 2012</time></div>
+		<div class="tags">
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/2012/08/14/uninstall-macosx-pkg/" itemprop="url">刪除Mac OS X下的安裝Package</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>在Mac OS X常會見到一種安裝檔.pkg，行為像Windows底下的安裝檔，但是想要移除安裝的內容時，檔案可能散佈在各個資料夾，就不像以.dmg安裝的只要把Applications資料夾中的內容刪除即可。</p>
+
+<p>Google了一下還是有解的</p>
+
+<p>列出所有安裝的packages:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ pkgutil --pkgs</span></code></pre></td></tr></table></div></figure>
+
+
+<p>可以配合grep來找到要移除的package</p>
+
+<p>使用下面的shell script來移除所有檔案</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>pkgutil --files <span class="nv">$1</span> | sed -e <span class="s2">&quot;s/^/\//&quot;</span> | sed -n <span class="s1">&#39;1!G;h;$p&#39;</span> | <span class="k">while </span><span class="nb">read </span>line
+</span><span class='line'><span class="k">do</span>
+</span><span class='line'><span class="k">  </span>rm <span class="s2">&quot;$line&quot;</span> 2&gt; /dev/null;
+</span><span class='line'>  rmdir <span class="s2">&quot;$line&quot;</span> 2&gt; /dev/null;
+</span><span class='line'><span class="k">done</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">

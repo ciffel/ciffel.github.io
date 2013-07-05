@@ -3,12 +3,11 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>SSH Alias - Shu@Note</title>
+	<title>Migrate from Hexo to Octorpress - Shu@Note</title>
 	<meta name="author" content="ciffel">
 
 	
-	<meta name="description" content="SSH Alias 在terminal底下使用ssh打port,帳號,位置總是令人厭煩 1
-$ ssh -p 3357 shume@machinex.example.com 這時候使用SSH alias就可以節省大量時間 ~/.ssh/config 編輯~/.ssh/config( &hellip;">
+	<meta name="description" content="Migrate From Hexo to Octorpress Although Hexo is fast, it is written in Node.js. I think I am a ruby guy and Ruby 2.0 is faster than previous &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +17,7 @@ $ ssh -p 3357 shume@machinex.example.com 這時候使用SSH alias就可以節省
 
 	<link href="/atom.xml" rel="alternate" title="Shu@Note" type="application/atom+xml">
 	
-	<link rel="canonical" href="http://ciffel.github.io/2012/09/04/ssh-alias/">
+	<link rel="canonical" href="http://ciffel.github.io/2013/07/05/migrate-from-hexo-to-octorpress/">
 	<link href="/favicon.png" rel="shortcut icon">
 	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -89,43 +88,25 @@ $ ssh -p 3357 shume@machinex.example.com 這時候使用SSH alias就可以節省
 			
 			<div class="mid-col-container">
 				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-	<h1 class="title" itemprop="name">SSH Alias</h1>
-	<div class="entry-content" itemprop="articleBody"><p>在terminal底下使用ssh打port,帳號,位置總是令人厭煩</p>
+	<h1 class="title" itemprop="name">Migrate From Hexo to Octorpress</h1>
+	<div class="entry-content" itemprop="articleBody"><p>Although Hexo is fast, it is written in Node.js. I think I am a ruby guy and Ruby 2.0 is faster than previous versions. This brings me back to Octopress.</p>
+
+<p>When I make Octopress generated my blog, I found that the post format of Hexo is not compatible with the format of Octopress. After searching on the Internet, there is no tool taht help me to convert the markdown format. I decided to write a converter by myself.</p>
+
+<h2><a href="https://github.com/ciffel/Hexo-to-Octopress-Converter">Hexo to Octopress Converter</a></h2>
+
+<p>This is a tool help you to migrate Hexo post format to Octopress post format.</p>
+
+<h3>Usage</h3>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ ssh -p 3357 shume@machinex.example.com</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ./converter &lt;hexo_posts_dir&gt; &lt;octopress_posts_dir&gt;</span></code></pre></td></tr></table></div></figure>
 
 
-<p>這時候使用SSH alias就可以節省大量時間</p>
-
-<h2>~/.ssh/config</h2>
-
-<p>編輯<code>~/.ssh/config</code>(若是不存在就新增)</p>
+<h4>For example</h4>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>host m1
-</span><span class='line'>  hostname machinex.example.com
-</span><span class='line'>  user shume
-</span><span class='line'>  port 3357</span></code></pre></td></tr></table></div></figure>
-
-
-<p>(不需要的話，user跟port都可以省略)</p>
-
-<p>設定完config之後，開啟ssh只需要下</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ ssh m1</span></code></pre></td></tr></table></div></figure>
-
-
-<p>如果搭配public key使用，連密碼都不需要了</p>
-
-<h2>將public key上傳</h2>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ cat ~/.ssh/id_rsa.pub | ssh m1 'cat &gt;&gt; ~/.ssh/authorized_keys'</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ./converter hexo/source/_posts octopress/source/_posts</span></code></pre></td></tr></table></div></figure>
 
 </div>
 
@@ -172,8 +153,8 @@ Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Sha
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://ciffel.github.io/2012/09/04/ssh-alias/';
-        var disqus_url = 'http://ciffel.github.io/2012/09/04/ssh-alias/';
+        var disqus_identifier = 'http://ciffel.github.io/2013/07/05/migrate-from-hexo-to-octorpress/';
+        var disqus_url = 'http://ciffel.github.io/2013/07/05/migrate-from-hexo-to-octorpress/';
         var disqus_script = 'embed.js';
       
     (function () {

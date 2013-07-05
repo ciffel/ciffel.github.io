@@ -7,7 +7,7 @@
 	<meta name="author" content="ciffel">
 
 	
-	<meta name="description" content="Apr 28th, 2013 Justpaste - a Convenient Image Uploader 最近在CNA micro conf.跟大家分享我做的Justpaste，這是一個讀取剪貼簿內容並自動上傳到imgur的服務，透過複製貼上就可以快速的分享影片截圖。 URL: http &hellip;">
+	<meta name="description" content="Jul 5th, 2013 blog, ruby Migrate From Hexo to Octorpress Although Hexo is fast, it is written in Node.js. I think I am a ruby guy and Ruby 2.0 is &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -17,7 +17,7 @@
 
 	<link href="/atom.xml" rel="alternate" title="Shu@Note" type="application/atom+xml">
 	
-	<link rel="canonical" href="http://blog.shume.in/">
+	<link rel="canonical" href="http://ciffel.github.io/">
 	<link href="/favicon.png" rel="shortcut icon">
 	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -89,6 +89,59 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-05T19:25:00+08:00" data-updated="true" itemprop="datePublished">Jul 5<span>th</span>, 2013</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/categories/blog/'>blog</a>, <a class='category' href='/categories/ruby/'>ruby</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/2013/07/05/migrate-from-hexo-to-octorpress/" itemprop="url">Migrate From Hexo to Octorpress</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>Although Hexo is fast, it is written in Node.js. I think I am a ruby guy and Ruby 2.0 is faster than previous versions. This brings me back to Octopress.</p>
+
+<p>When I make Octopress generated my blog, I found that the post format of Hexo is not compatible with the format of Octopress. After searching on the Internet, there is no tool taht help me to convert the markdown format. I decided to write a converter by myself.</p>
+
+<h2><a href="https://github.com/ciffel/Hexo-to-Octopress-Converter">Hexo to Octopress Converter</a></h2>
+
+<p>This is a tool help you to migrate Hexo post format to Octopress post format.</p>
+
+<h3>Usage</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ./converter &lt;hexo_posts_dir&gt; &lt;octopress_posts_dir&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>For example</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ./converter hexo/source/_posts octopress/source/_posts</span></code></pre></td></tr></table></div></figure>
+
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
@@ -571,62 +624,6 @@
 
 
 <p>這樣就快速的編譯完所撰寫的Qt Application了</p>
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-08-14T22:44:58+08:00" data-updated="true" itemprop="datePublished">Aug 14<span>th</span>, 2012</time></div>
-		<div class="tags">
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/2012/08/14/uninstall-macosx-pkg/" itemprop="url">刪除Mac OS X下的安裝Package</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p>在Mac OS X常會見到一種安裝檔.pkg，行為像Windows底下的安裝檔，但是想要移除安裝的內容時，檔案可能散佈在各個資料夾，就不像以.dmg安裝的只要把Applications資料夾中的內容刪除即可。</p>
-
-<p>Google了一下還是有解的</p>
-
-<p>列出所有安裝的packages:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ pkgutil --pkgs</span></code></pre></td></tr></table></div></figure>
-
-
-<p>可以配合grep來找到要移除的package</p>
-
-<p>使用下面的shell script來移除所有檔案</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>pkgutil --files <span class="nv">$1</span> | sed -e <span class="s2">&quot;s/^/\//&quot;</span> | sed -n <span class="s1">&#39;1!G;h;$p&#39;</span> | <span class="k">while </span><span class="nb">read </span>line
-</span><span class='line'><span class="k">do</span>
-</span><span class='line'><span class="k">  </span>rm <span class="s2">&quot;$line&quot;</span> 2&gt; /dev/null;
-</span><span class='line'>  rmdir <span class="s2">&quot;$line&quot;</span> 2&gt; /dev/null;
-</span><span class='line'><span class="k">done</span>
-</span></code></pre></td></tr></table></div></figure>
-
 
 		
 		

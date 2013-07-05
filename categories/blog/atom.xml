@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: blog | Shu@Note]]></title>
+  <link href="http://ciffel.github.io/categories/blog/atom.xml" rel="self"/>
+  <link href="http://ciffel.github.io/"/>
+  <updated>2013-07-05T19:52:18+08:00</updated>
+  <id>http://ciffel.github.io/</id>
+  <author>
+    <name><![CDATA[ciffel]]></name>
+    <email><![CDATA[ciffel@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Migrate from Hexo to Octorpress]]></title>
+    <link href="http://ciffel.github.io/2013/07/05/migrate-from-hexo-to-octorpress/"/>
+    <updated>2013-07-05T19:25:00+08:00</updated>
+    <id>http://ciffel.github.io/2013/07/05/migrate-from-hexo-to-octorpress</id>
+    <content type="html"><![CDATA[<p>Although Hexo is fast, it is written in Node.js. I think I am a ruby guy and Ruby 2.0 is faster than previous versions. This brings me back to Octopress.</p>
+
+<p>When I make Octopress generated my blog, I found that the post format of Hexo is not compatible with the format of Octopress. After searching on the Internet, there is no tool taht help me to convert the markdown format. I decided to write a converter by myself.</p>
+
+<h2><a href="https://github.com/ciffel/Hexo-to-Octopress-Converter">Hexo to Octopress Converter</a></h2>
+
+<p>This is a tool help you to migrate Hexo post format to Octopress post format.</p>
+
+<h3>Usage</h3>
+
+<p><code>
+$ ./converter &lt;hexo_posts_dir&gt; &lt;octopress_posts_dir&gt;
+</code></p>
+
+<h4>For example</h4>
+
+<p><code>
+$ ./converter hexo/source/_posts octopress/source/_posts
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>

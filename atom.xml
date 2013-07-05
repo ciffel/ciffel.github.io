@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Shu@Note]]></title>
-  <link href="http://blog.shume.in/atom.xml" rel="self"/>
-  <link href="http://blog.shume.in/"/>
-  <updated>2013-07-05T18:54:29+08:00</updated>
-  <id>http://blog.shume.in/</id>
+  <link href="http://ciffel.github.io/atom.xml" rel="self"/>
+  <link href="http://ciffel.github.io/"/>
+  <updated>2013-07-05T19:52:18+08:00</updated>
+  <id>http://ciffel.github.io/</id>
   <author>
     <name><![CDATA[ciffel]]></name>
     <email><![CDATA[ciffel@gmail.com]]></email>
@@ -14,10 +14,37 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Migrate from Hexo to Octorpress]]></title>
+    <link href="http://ciffel.github.io/2013/07/05/migrate-from-hexo-to-octorpress/"/>
+    <updated>2013-07-05T19:25:00+08:00</updated>
+    <id>http://ciffel.github.io/2013/07/05/migrate-from-hexo-to-octorpress</id>
+    <content type="html"><![CDATA[<p>Although Hexo is fast, it is written in Node.js. I think I am a ruby guy and Ruby 2.0 is faster than previous versions. This brings me back to Octopress.</p>
+
+<p>When I make Octopress generated my blog, I found that the post format of Hexo is not compatible with the format of Octopress. After searching on the Internet, there is no tool taht help me to convert the markdown format. I decided to write a converter by myself.</p>
+
+<h2><a href="https://github.com/ciffel/Hexo-to-Octopress-Converter">Hexo to Octopress Converter</a></h2>
+
+<p>This is a tool help you to migrate Hexo post format to Octopress post format.</p>
+
+<h3>Usage</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ./converter &lt;hexo_posts_dir&gt; &lt;octopress_posts_dir&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>For example</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ./converter hexo/source/_posts octopress/source/_posts</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Justpaste - A convenient image uploader]]></title>
-    <link href="http://blog.shume.in/2013/04/28/justpaste/"/>
+    <link href="http://ciffel.github.io/2013/04/28/justpaste/"/>
     <updated>2013-04-28T05:28:25+08:00</updated>
-    <id>http://blog.shume.in/2013/04/28/justpaste</id>
+    <id>http://ciffel.github.io/2013/04/28/justpaste</id>
     <content type="html"><![CDATA[<p>最近在CNA micro conf.跟大家分享我做的<a href="http://justpaste.shume.in/">Justpaste</a>，這是一個讀取剪貼簿內容並自動上傳到imgur的服務，透過複製貼上就可以快速的分享影片截圖。</p>
 
 <ul>
@@ -29,16 +56,16 @@
 <br />
 
 
-<script async class="speakerdeck-embed" data-id="f9a5da308fe70130feae1231381d79e1" data-ratio="1.33333333333333" src="http://blog.shume.in//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="f9a5da308fe70130feae1231381d79e1" data-ratio="1.33333333333333" src="http://ciffel.github.io//speakerdeck.com/assets/embed.js"></script>
 
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[MacOS無法開啟Chrome下載的檔案]]></title>
-    <link href="http://blog.shume.in/2013/03/11/cant-open-downloaded-files-from-chrome/"/>
+    <link href="http://ciffel.github.io/2013/03/11/cant-open-downloaded-files-from-chrome/"/>
     <updated>2013-03-11T23:10:57+08:00</updated>
-    <id>http://blog.shume.in/2013/03/11/cant-open-downloaded-files-from-chrome</id>
+    <id>http://ciffel.github.io/2013/03/11/cant-open-downloaded-files-from-chrome</id>
     <content type="html"><![CDATA[<p>在MacOS 10.8.2的Google Chrome，下載檔案後，無法從底下的下載列直接點選檔案來開啟，這時候只需要重開一個process就可以了。</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -53,9 +80,9 @@
   
   <entry>
     <title type="html"><![CDATA[Ecourse Fix - Google Chrome Extentsion]]></title>
-    <link href="http://blog.shume.in/2012/12/12/ecourse_fix_google_chrome/"/>
+    <link href="http://ciffel.github.io/2012/12/12/ecourse_fix_google_chrome/"/>
     <updated>2012-12-12T23:08:11+08:00</updated>
-    <id>http://blog.shume.in/2012/12/12/ecourse_fix_google_chrome</id>
+    <id>http://ciffel.github.io/2012/12/12/ecourse_fix_google_chrome</id>
     <content type="html"><![CDATA[<h2>說明</h2>
 
 <p>由於中正大學的課程教學系統在Google Chrome上有相容性問題，會導致功能選單與課程教材連結無效，所以才有這個擴充套件的出現。</p>
@@ -81,9 +108,9 @@
   
   <entry>
     <title type="html"><![CDATA[RVM install Passenger and_Nginx]]></title>
-    <link href="http://blog.shume.in/2012/12/01/rvm_install_passenger_and_nginx/"/>
+    <link href="http://ciffel.github.io/2012/12/01/rvm_install_passenger_and_nginx/"/>
     <updated>2012-12-01T23:03:56+08:00</updated>
-    <id>http://blog.shume.in/2012/12/01/rvm_install_passenger_and_nginx</id>
+    <id>http://ciffel.github.io/2012/12/01/rvm_install_passenger_and_nginx</id>
     <content type="html"><![CDATA[<p>OS: Ubuntu 12.04.1 大致上是參照<a href="http://ruby-china.org/wiki/mac-nginx-passenger-rails">這篇</a>的做法</p>
 
 <p>先用gem安裝Passenger</p>
@@ -124,9 +151,9 @@
   
   <entry>
     <title type="html"><![CDATA[Mosh usage]]></title>
-    <link href="http://blog.shume.in/2012/11/15/mosh-usage/"/>
+    <link href="http://ciffel.github.io/2012/11/15/mosh-usage/"/>
     <updated>2012-11-15T22:57:07+08:00</updated>
-    <id>http://blog.shume.in/2012/11/15/mosh-usage</id>
+    <id>http://ciffel.github.io/2012/11/15/mosh-usage</id>
     <content type="html"><![CDATA[<p>Mosh介紹</p>
 
 <ul>
@@ -159,9 +186,9 @@
   
   <entry>
     <title type="html"><![CDATA[SSH Alias]]></title>
-    <link href="http://blog.shume.in/2012/09/04/ssh-alias/"/>
+    <link href="http://ciffel.github.io/2012/09/04/ssh-alias/"/>
     <updated>2012-09-04T22:54:55+08:00</updated>
-    <id>http://blog.shume.in/2012/09/04/ssh-alias</id>
+    <id>http://ciffel.github.io/2012/09/04/ssh-alias</id>
     <content type="html"><![CDATA[<p>在terminal底下使用ssh打port,帳號,位置總是令人厭煩</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -204,9 +231,9 @@
   
   <entry>
     <title type="html"><![CDATA[NAT Configuration in VMware Player 5]]></title>
-    <link href="http://blog.shume.in/2012/09/04/nat-configuration-in-vmware-player-5/"/>
+    <link href="http://ciffel.github.io/2012/09/04/nat-configuration-in-vmware-player-5/"/>
     <updated>2012-09-04T22:51:44+08:00</updated>
-    <id>http://blog.shume.in/2012/09/04/nat-configuration-in-vmware-player-5</id>
+    <id>http://ciffel.github.io/2012/09/04/nat-configuration-in-vmware-player-5</id>
     <content type="html"><![CDATA[<h2>Before VMware Player 5</h2>
 
 <p>在Windows中VMware需要NAT Port Forwarding，可以透過VMware內建的程式vmnetcfg來進行設定，但這程式並不在預設安裝的項目裡面，所以在VMware Player的安裝目錄中是找不到的。</p>
@@ -235,9 +262,9 @@
   
   <entry>
     <title type="html"><![CDATA[編譯Qt程式: Q_OBJECT]]></title>
-    <link href="http://blog.shume.in/2012/08/30/compile-qt-program/"/>
+    <link href="http://ciffel.github.io/2012/08/30/compile-qt-program/"/>
     <updated>2012-08-30T22:49:42+08:00</updated>
-    <id>http://blog.shume.in/2012/08/30/compile-qt-program</id>
+    <id>http://ciffel.github.io/2012/08/30/compile-qt-program</id>
     <content type="html"><![CDATA[<p>當程式裡需要使用signal與slot時，只要參閱官方文件就可以知道我們必須在Class上方加入Q_OBJECT這個macro。</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -268,9 +295,9 @@
   
   <entry>
     <title type="html"><![CDATA[Install Qt on Mac OSX]]></title>
-    <link href="http://blog.shume.in/2012/08/29/install-qt-on-macosx/"/>
+    <link href="http://ciffel.github.io/2012/08/29/install-qt-on-macosx/"/>
     <updated>2012-08-29T22:46:49+08:00</updated>
-    <id>http://blog.shume.in/2012/08/29/install-qt-on-macosx</id>
+    <id>http://ciffel.github.io/2012/08/29/install-qt-on-macosx</id>
     <content type="html"><![CDATA[<p>需要Qt的開發環境但是又不想使用Qt Creator與其他肥大的夥伴，在Mac上我選擇使用最簡單的homebrew來安裝。</p>
 
 <p>安裝Qt SDK</p>
@@ -305,9 +332,9 @@
   
   <entry>
     <title type="html"><![CDATA[刪除Mac OS X下的安裝Package]]></title>
-    <link href="http://blog.shume.in/2012/08/14/uninstall-macosx-pkg/"/>
+    <link href="http://ciffel.github.io/2012/08/14/uninstall-macosx-pkg/"/>
     <updated>2012-08-14T22:44:58+08:00</updated>
-    <id>http://blog.shume.in/2012/08/14/uninstall-macosx-pkg</id>
+    <id>http://ciffel.github.io/2012/08/14/uninstall-macosx-pkg</id>
     <content type="html"><![CDATA[<p>在Mac OS X常會見到一種安裝檔.pkg，行為像Windows底下的安裝檔，但是想要移除安裝的內容時，檔案可能散佈在各個資料夾，就不像以.dmg安裝的只要把Applications資料夾中的內容刪除即可。</p>
 
 <p>Google了一下還是有解的</p>
@@ -339,9 +366,9 @@
   
   <entry>
     <title type="html"><![CDATA[於Facebook Feed中加入連結]]></title>
-    <link href="http://blog.shume.in/2012/07/21/hyperlink-in-fb-feed-dialog/"/>
+    <link href="http://ciffel.github.io/2012/07/21/hyperlink-in-fb-feed-dialog/"/>
     <updated>2012-07-21T22:34:17+08:00</updated>
-    <id>http://blog.shume.in/2012/07/21/hyperlink-in-fb-feed-dialog</id>
+    <id>http://ciffel.github.io/2012/07/21/hyperlink-in-fb-feed-dialog</id>
     <content type="html"><![CDATA[<p><img src="https://lh3.googleusercontent.com/-PabNCzexjNY/T-L1xE28K2I/AAAAAAAAAnM/j_ghq84k9os/s514/feed-dialog.png" alt="image" /></p>
 
 <p>當想要在Facebook Feed加入連結的時候，會發現description只能是純文字，如果加入HTML TAG就會自動被濾掉，官方文件中沒有寫明如何在description加入連結，稍微Google了一下才找到解法，原來是要用properties！</p>
