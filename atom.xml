@@ -4,7 +4,7 @@
   <title><![CDATA[Shu@Note]]></title>
   <link href="http://ciffel.github.io/atom.xml" rel="self"/>
   <link href="http://ciffel.github.io/"/>
-  <updated>2013-07-05T20:09:23+08:00</updated>
+  <updated>2013-07-08T21:23:45+08:00</updated>
   <id>http://ciffel.github.io/</id>
   <author>
     <name><![CDATA[ciffel]]></name>
@@ -12,6 +12,103 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[My Working Environment]]></title>
+    <link href="http://ciffel.github.io/2013/07/08/my-working-environment/"/>
+    <updated>2013-07-08T20:27:00+08:00</updated>
+    <id>http://ciffel.github.io/2013/07/08/my-working-environment</id>
+    <content type="html"><![CDATA[<p>常有想要把自己常用的工作環境記錄下來的念頭，但是常被問到Mac或是Linux該裝哪些軟體，或是自己設定Server作為開發環境時也要思考一下是否少了哪些，最重要的是我根本是個工具控啊！調整vim, zsh設定檔就可以開開心心的浪費整個下午 :p</p>
+
+<p>首先MacOSX的話就要先裝個</p>
+
+<h2>XCode Command Line Tools</h2>
+
+<p>XCode可以於App Store中安裝，之後可以在Perference &ndash;> Downloads中選擇Command Line Tools安裝，不過我都習慣從<a href="https://developer.apple.com">Apple Developer</a>網站下載安裝，不過麻煩很多就是了。裝完後就會有clang, gcc(front-end), make等編譯source code的重要工具。</p>
+
+<h2>iTerm2</h2>
+
+<p>接來都圍繞著terminal了，因為Mac內建的終端機程式能設定的地方很少，所以就以<a href="http://www.iterm2.com/">iTerm2</a>來取代它，自從裝了這個我再也沒打開過&#8221;終端機&#8221;了 XD</p>
+
+<h2>Homebrew</h2>
+
+<p>我的Linux環境啟蒙是Ubuntu，從Windows轉換到Ubuntu發現原來安裝軟體這麼方便，只要用apt-get打個指令就全部搞定，而在MacOSX雖然沒有內建套件管理程式，但是我們還有<a href="http://mxcl.github.io/homebrew/index_zh-tw.html">Homebrew</a>來填補這個空缺！與apt-get直接取得binary檔不同的是，Homebrew是基於git取得Source Code再進行編譯，不過不用擔心是Homebrew的formula都幫你處理好編譯原始碼等麻煩事了。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># install package
+</span><span class='line'>$ brew install &lt;package_name&gt;
+</span><span class='line'>
+</span><span class='line'># update formula
+</span><span class='line'>$ brew update
+</span><span class='line'>
+</span><span class='line'># upgrade all package
+</span><span class='line'>$ brew upgrade
+</span><span class='line'>
+</span><span class='line'># diagnose known issues
+</span><span class='line'>$ brew doctor</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>zsh</h2>
+
+<p>在unix-like的環境，shell好用與否是影響工作效率的重大因素，而<a href="http://www.zsh.org/">zsh</a>是我使用過最棒的shell！它與bash相容，所以基本上可以無縫接軌使用，此外還有錯字檢查與tab自動完成，tab的強大用一次就癮。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># MacOSX
+</span><span class='line'>$ brew install zsh
+</span><span class='line'>
+</span><span class='line'># Ubuntu
+</span><span class='line'>$ sudo apt-get install zsh</span></code></pre></td></tr></table></div></figure>
+
+
+<p>安裝完成之後，用chsh來改變預設的shell</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ chsh -s /bin/zsh</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>oh-my-zsh</h2>
+
+<p><a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>是zsh設定檔的大集合，裡面有非常多的theme和plugin，少了這個zsh功力少了一大半！</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh</span></code></pre></td></tr></table></div></figure>
+
+
+<p>打開<code>~/.zshrc</code>作更多自訂，以下是我使用的theme及plugin</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ZSH_THEME="simple"
+</span><span class='line'>plugins=(git sublime rbenv bundler rails rails4)</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>成品</h2>
+
+<p><img src="http://i.imgur.com/4fO4xNK.png" alt="screenshot" /></p>
+
+<h2>未完待續</h2>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Migrate from Hexo to Octorpress]]></title>

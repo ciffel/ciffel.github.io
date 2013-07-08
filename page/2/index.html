@@ -7,7 +7,8 @@
 	<meta name="author" content="ciffel">
 
 	
-	<meta name="description" content="Aug 14th, 2012 Mac 刪除Mac OS X下的安裝Package 在Mac OS X常會見到一種安裝檔.pkg，行為像Windows底下的安裝檔，但是想要移除安裝的內容時，檔案可能散佈在各個資料夾，就不像以.dmg安裝的只要把Applications資料夾中的內容刪除即可。 &hellip;">
+	<meta name="description" content="Aug 29th, 2012 Mac, Qt Install Qt on Mac OSX 需要Qt的開發環境但是又不想使用Qt Creator與其他肥大的夥伴，在Mac上我選擇使用最簡單的homebrew來安裝。 安裝Qt SDK 1
+$ brew install qt 新增project資料夾 &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -89,6 +90,69 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-29T22:46:49+08:00" data-updated="true" itemprop="datePublished">Aug 29<span>th</span>, 2012</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/categories/mac/'>Mac</a>, <a class='category' href='/categories/qt/'>Qt</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/2012/08/29/install-qt-on-macosx/" itemprop="url">Install Qt on Mac OSX</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>需要Qt的開發環境但是又不想使用Qt Creator與其他肥大的夥伴，在Mac上我選擇使用最簡單的homebrew來安裝。</p>
+
+<p>安裝Qt SDK</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ brew install qt</span></code></pre></td></tr></table></div></figure>
+
+
+<p>新增project資料夾，開始編輯</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ mkdir qtdemo
+</span><span class='line'>$ cd qtdemo
+</span><span class='line'>$ vim hello.cpp</span></code></pre></td></tr></table></div></figure>
+
+
+<p>編譯時，使用qmake來產生Makefile</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ qmake -project
+</span><span class='line'>$ qmake
+</span><span class='line'>$ make</span></code></pre></td></tr></table></div></figure>
+
+
+<p>這樣就快速的編譯完所撰寫的Qt Application了</p>
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
