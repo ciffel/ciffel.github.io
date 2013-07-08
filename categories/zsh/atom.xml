@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: zsh | Shu@Note]]></title>
-  <link href="http://ciffel.github.io/categories/zsh/atom.xml" rel="self"/>
-  <link href="http://ciffel.github.io/"/>
-  <updated>2013-07-08T21:23:45+08:00</updated>
-  <id>http://ciffel.github.io/</id>
+  <link href="http://blog.shume.in/categories/zsh/atom.xml" rel="self"/>
+  <link href="http://blog.shume.in/"/>
+  <updated>2013-07-08T21:26:00+08:00</updated>
+  <id>http://blog.shume.in/</id>
   <author>
-    <name><![CDATA[ciffel]]></name>
+    <name><![CDATA[shuming]]></name>
     <email><![CDATA[ciffel@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[My Working Environment]]></title>
-    <link href="http://ciffel.github.io/2013/07/08/my-working-environment/"/>
+    <link href="http://blog.shume.in/2013/07/08/my-working-environment/"/>
     <updated>2013-07-08T20:27:00+08:00</updated>
-    <id>http://ciffel.github.io/2013/07/08/my-working-environment</id>
+    <id>http://blog.shume.in/2013/07/08/my-working-environment</id>
     <content type="html"><![CDATA[<p>常有想要把自己常用的工作環境記錄下來的念頭，但是常被問到Mac或是Linux該裝哪些軟體，或是自己設定Server作為開發環境時也要思考一下是否少了哪些，最重要的是我根本是個工具控啊！調整vim, zsh設定檔就可以開開心心的浪費整個下午 :p</p>
 
 <p>首先MacOSX的話就要先裝個</p>

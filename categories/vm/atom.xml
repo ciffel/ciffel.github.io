@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: VM | Shu@Note]]></title>
-  <link href="http://ciffel.github.io/categories/vm/atom.xml" rel="self"/>
-  <link href="http://ciffel.github.io/"/>
-  <updated>2013-07-08T21:23:45+08:00</updated>
-  <id>http://ciffel.github.io/</id>
+  <link href="http://blog.shume.in/categories/vm/atom.xml" rel="self"/>
+  <link href="http://blog.shume.in/"/>
+  <updated>2013-07-08T21:26:00+08:00</updated>
+  <id>http://blog.shume.in/</id>
   <author>
-    <name><![CDATA[ciffel]]></name>
+    <name><![CDATA[shuming]]></name>
     <email><![CDATA[ciffel@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[NAT Configuration in VMware Player 5]]></title>
-    <link href="http://ciffel.github.io/2012/09/04/nat-configuration-in-vmware-player-5/"/>
+    <link href="http://blog.shume.in/2012/09/04/nat-configuration-in-vmware-player-5/"/>
     <updated>2012-09-04T22:51:44+08:00</updated>
-    <id>http://ciffel.github.io/2012/09/04/nat-configuration-in-vmware-player-5</id>
+    <id>http://blog.shume.in/2012/09/04/nat-configuration-in-vmware-player-5</id>
     <content type="html"><![CDATA[<h2>Before VMware Player 5</h2>
 
 <p>在Windows中VMware需要NAT Port Forwarding，可以透過VMware內建的程式vmnetcfg來進行設定，但這程式並不在預設安裝的項目裡面，所以在VMware Player的安裝目錄中是找不到的。</p>

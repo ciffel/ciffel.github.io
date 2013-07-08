@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: JavaScript | Shu@Note]]></title>
-  <link href="http://ciffel.github.io/categories/javascript/atom.xml" rel="self"/>
-  <link href="http://ciffel.github.io/"/>
-  <updated>2013-07-08T21:23:45+08:00</updated>
-  <id>http://ciffel.github.io/</id>
+  <link href="http://blog.shume.in/categories/javascript/atom.xml" rel="self"/>
+  <link href="http://blog.shume.in/"/>
+  <updated>2013-07-08T21:26:00+08:00</updated>
+  <id>http://blog.shume.in/</id>
   <author>
-    <name><![CDATA[ciffel]]></name>
+    <name><![CDATA[shuming]]></name>
     <email><![CDATA[ciffel@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[於Facebook Feed中加入連結]]></title>
-    <link href="http://ciffel.github.io/2012/07/21/hyperlink-in-fb-feed-dialog/"/>
+    <link href="http://blog.shume.in/2012/07/21/hyperlink-in-fb-feed-dialog/"/>
     <updated>2012-07-21T22:34:17+08:00</updated>
-    <id>http://ciffel.github.io/2012/07/21/hyperlink-in-fb-feed-dialog</id>
+    <id>http://blog.shume.in/2012/07/21/hyperlink-in-fb-feed-dialog</id>
     <content type="html"><![CDATA[<p><img src="https://lh3.googleusercontent.com/-PabNCzexjNY/T-L1xE28K2I/AAAAAAAAAnM/j_ghq84k9os/s514/feed-dialog.png" alt="image" /></p>
 
 <p>當想要在Facebook Feed加入連結的時候，會發現description只能是純文字，如果加入HTML TAG就會自動被濾掉，官方文件中沒有寫明如何在description加入連結，稍微Google了一下才找到解法，原來是要用properties！</p>

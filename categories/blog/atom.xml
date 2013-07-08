@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: blog | Shu@Note]]></title>
-  <link href="http://ciffel.github.io/categories/blog/atom.xml" rel="self"/>
-  <link href="http://ciffel.github.io/"/>
-  <updated>2013-07-08T21:23:45+08:00</updated>
-  <id>http://ciffel.github.io/</id>
+  <link href="http://blog.shume.in/categories/blog/atom.xml" rel="self"/>
+  <link href="http://blog.shume.in/"/>
+  <updated>2013-07-08T21:26:00+08:00</updated>
+  <id>http://blog.shume.in/</id>
   <author>
-    <name><![CDATA[ciffel]]></name>
+    <name><![CDATA[shuming]]></name>
     <email><![CDATA[ciffel@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Migrate from Hexo to Octorpress]]></title>
-    <link href="http://ciffel.github.io/2013/07/05/migrate-from-hexo-to-octorpress/"/>
+    <link href="http://blog.shume.in/2013/07/05/migrate-from-hexo-to-octorpress/"/>
     <updated>2013-07-05T19:25:00+08:00</updated>
-    <id>http://ciffel.github.io/2013/07/05/migrate-from-hexo-to-octorpress</id>
+    <id>http://blog.shume.in/2013/07/05/migrate-from-hexo-to-octorpress</id>
     <content type="html"><![CDATA[<p>Although Hexo is fast, it is written in Node.js. I think I am a ruby guy and Ruby 2.0 is faster than previous versions. This brings me back to Octopress.</p>
 
 <p>When I make Octopress generated my blog, I found that the post format of Hexo is not compatible with the format of Octopress. After searching on the Internet, there is no tool taht help me to convert the markdown format. I decided to write a converter by myself.</p>

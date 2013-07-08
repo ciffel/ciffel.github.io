@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: ruby | Shu@Note]]></title>
-  <link href="http://ciffel.github.io/categories/ruby/atom.xml" rel="self"/>
-  <link href="http://ciffel.github.io/"/>
-  <updated>2013-07-08T21:23:45+08:00</updated>
-  <id>http://ciffel.github.io/</id>
+  <link href="http://blog.shume.in/categories/ruby/atom.xml" rel="self"/>
+  <link href="http://blog.shume.in/"/>
+  <updated>2013-07-08T21:26:00+08:00</updated>
+  <id>http://blog.shume.in/</id>
   <author>
-    <name><![CDATA[ciffel]]></name>
+    <name><![CDATA[shuming]]></name>
     <email><![CDATA[ciffel@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Migrate from Hexo to Octorpress]]></title>
-    <link href="http://ciffel.github.io/2013/07/05/migrate-from-hexo-to-octorpress/"/>
+    <link href="http://blog.shume.in/2013/07/05/migrate-from-hexo-to-octorpress/"/>
     <updated>2013-07-05T19:25:00+08:00</updated>
-    <id>http://ciffel.github.io/2013/07/05/migrate-from-hexo-to-octorpress</id>
+    <id>http://blog.shume.in/2013/07/05/migrate-from-hexo-to-octorpress</id>
     <content type="html"><![CDATA[<p>Although Hexo is fast, it is written in Node.js. I think I am a ruby guy and Ruby 2.0 is faster than previous versions. This brings me back to Octopress.</p>
 
 <p>When I make Octopress generated my blog, I found that the post format of Hexo is not compatible with the format of Octopress. After searching on the Internet, there is no tool taht help me to convert the markdown format. I decided to write a converter by myself.</p>
@@ -42,9 +42,9 @@ $ ./converter hexo/source/_posts octopress/source/_posts
   
   <entry>
     <title type="html"><![CDATA[RVM install Passenger and_Nginx]]></title>
-    <link href="http://ciffel.github.io/2012/12/01/rvm_install_passenger_and_nginx/"/>
+    <link href="http://blog.shume.in/2012/12/01/rvm_install_passenger_and_nginx/"/>
     <updated>2012-12-01T23:03:56+08:00</updated>
-    <id>http://ciffel.github.io/2012/12/01/rvm_install_passenger_and_nginx</id>
+    <id>http://blog.shume.in/2012/12/01/rvm_install_passenger_and_nginx</id>
     <content type="html"><![CDATA[<p>OS: Ubuntu 12.04.1 大致上是參照<a href="http://ruby-china.org/wiki/mac-nginx-passenger-rails">這篇</a>的做法</p>
 
 <p>先用gem安裝Passenger</p>

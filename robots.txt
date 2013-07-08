@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://ciffel.github.io/sitemap.xml 
+Sitemap: http://blog.shume.in/sitemap.xml 

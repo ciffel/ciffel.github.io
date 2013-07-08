@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: ssh | Shu@Note]]></title>
-  <link href="http://ciffel.github.io/categories/ssh/atom.xml" rel="self"/>
-  <link href="http://ciffel.github.io/"/>
-  <updated>2013-07-08T21:23:45+08:00</updated>
-  <id>http://ciffel.github.io/</id>
+  <link href="http://blog.shume.in/categories/ssh/atom.xml" rel="self"/>
+  <link href="http://blog.shume.in/"/>
+  <updated>2013-07-08T21:26:00+08:00</updated>
+  <id>http://blog.shume.in/</id>
   <author>
-    <name><![CDATA[ciffel]]></name>
+    <name><![CDATA[shuming]]></name>
     <email><![CDATA[ciffel@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Mosh usage]]></title>
-    <link href="http://ciffel.github.io/2012/11/15/mosh-usage/"/>
+    <link href="http://blog.shume.in/2012/11/15/mosh-usage/"/>
     <updated>2012-11-15T22:57:07+08:00</updated>
-    <id>http://ciffel.github.io/2012/11/15/mosh-usage</id>
+    <id>http://blog.shume.in/2012/11/15/mosh-usage</id>
     <content type="html"><![CDATA[<p>Mosh介紹</p>
 
 <ul>
@@ -47,9 +47,9 @@ compdef mosh=ssh
   
   <entry>
     <title type="html"><![CDATA[SSH Alias]]></title>
-    <link href="http://ciffel.github.io/2012/09/04/ssh-alias/"/>
+    <link href="http://blog.shume.in/2012/09/04/ssh-alias/"/>
     <updated>2012-09-04T22:54:55+08:00</updated>
-    <id>http://ciffel.github.io/2012/09/04/ssh-alias</id>
+    <id>http://blog.shume.in/2012/09/04/ssh-alias</id>
     <content type="html"><![CDATA[<p>在terminal底下使用ssh打port,帳號,位置總是令人厭煩</p>
 
 <p><code>

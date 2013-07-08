@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Web | Shu@Note]]></title>
-  <link href="http://ciffel.github.io/categories/web/atom.xml" rel="self"/>
-  <link href="http://ciffel.github.io/"/>
-  <updated>2013-07-08T21:23:45+08:00</updated>
-  <id>http://ciffel.github.io/</id>
+  <link href="http://blog.shume.in/categories/web/atom.xml" rel="self"/>
+  <link href="http://blog.shume.in/"/>
+  <updated>2013-07-08T21:26:00+08:00</updated>
+  <id>http://blog.shume.in/</id>
   <author>
-    <name><![CDATA[ciffel]]></name>
+    <name><![CDATA[shuming]]></name>
     <email><![CDATA[ciffel@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Justpaste - A convenient image uploader]]></title>
-    <link href="http://ciffel.github.io/2013/04/28/justpaste/"/>
+    <link href="http://blog.shume.in/2013/04/28/justpaste/"/>
     <updated>2013-04-28T05:28:25+08:00</updated>
-    <id>http://ciffel.github.io/2013/04/28/justpaste</id>
+    <id>http://blog.shume.in/2013/04/28/justpaste</id>
     <content type="html"><![CDATA[<p>最近在CNA micro conf.跟大家分享我做的<a href="http://justpaste.shume.in/">Justpaste</a>，這是一個讀取剪貼簿內容並自動上傳到imgur的服務，透過複製貼上就可以快速的分享影片截圖。</p>
 
 <ul>
@@ -29,7 +29,7 @@
 <br />
 
 
-<script async class="speakerdeck-embed" data-id="f9a5da308fe70130feae1231381d79e1" data-ratio="1.33333333333333" src="http://ciffel.github.io//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="f9a5da308fe70130feae1231381d79e1" data-ratio="1.33333333333333" src="http://blog.shume.in//speakerdeck.com/assets/embed.js"></script>
 
 ]]></content>
   </entry>

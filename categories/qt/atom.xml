@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Qt | Shu@Note]]></title>
-  <link href="http://ciffel.github.io/categories/qt/atom.xml" rel="self"/>
-  <link href="http://ciffel.github.io/"/>
-  <updated>2013-07-08T21:23:45+08:00</updated>
-  <id>http://ciffel.github.io/</id>
+  <link href="http://blog.shume.in/categories/qt/atom.xml" rel="self"/>
+  <link href="http://blog.shume.in/"/>
+  <updated>2013-07-08T21:26:00+08:00</updated>
+  <id>http://blog.shume.in/</id>
   <author>
-    <name><![CDATA[ciffel]]></name>
+    <name><![CDATA[shuming]]></name>
     <email><![CDATA[ciffel@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[編譯Qt程式: Q_OBJECT]]></title>
-    <link href="http://ciffel.github.io/2012/08/30/compile-qt-program/"/>
+    <link href="http://blog.shume.in/2012/08/30/compile-qt-program/"/>
     <updated>2012-08-30T22:49:42+08:00</updated>
-    <id>http://ciffel.github.io/2012/08/30/compile-qt-program</id>
+    <id>http://blog.shume.in/2012/08/30/compile-qt-program</id>
     <content type="html"><![CDATA[<p>當程式裡需要使用signal與slot時，只要參閱官方文件就可以知道我們必須在Class上方加入Q_OBJECT這個macro。</p>
 
 <p>```cpp
@@ -47,9 +47,9 @@ undefined reference to `vtable for MainWindow'
   
   <entry>
     <title type="html"><![CDATA[Install Qt on Mac OSX]]></title>
-    <link href="http://ciffel.github.io/2012/08/29/install-qt-on-macosx/"/>
+    <link href="http://blog.shume.in/2012/08/29/install-qt-on-macosx/"/>
     <updated>2012-08-29T22:46:49+08:00</updated>
-    <id>http://ciffel.github.io/2012/08/29/install-qt-on-macosx</id>
+    <id>http://blog.shume.in/2012/08/29/install-qt-on-macosx</id>
     <content type="html"><![CDATA[<p>需要Qt的開發環境但是又不想使用Qt Creator與其他肥大的夥伴，在Mac上我選擇使用最簡單的homebrew來安裝。</p>
 
 <p>安裝Qt SDK

@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Chrome | Shu@Note]]></title>
-  <link href="http://ciffel.github.io/categories/chrome/atom.xml" rel="self"/>
-  <link href="http://ciffel.github.io/"/>
-  <updated>2013-07-08T21:23:45+08:00</updated>
-  <id>http://ciffel.github.io/</id>
+  <link href="http://blog.shume.in/categories/chrome/atom.xml" rel="self"/>
+  <link href="http://blog.shume.in/"/>
+  <updated>2013-07-08T21:26:00+08:00</updated>
+  <id>http://blog.shume.in/</id>
   <author>
-    <name><![CDATA[ciffel]]></name>
+    <name><![CDATA[shuming]]></name>
     <email><![CDATA[ciffel@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[MacOS無法開啟Chrome下載的檔案]]></title>
-    <link href="http://ciffel.github.io/2013/03/11/cant-open-downloaded-files-from-chrome/"/>
+    <link href="http://blog.shume.in/2013/03/11/cant-open-downloaded-files-from-chrome/"/>
     <updated>2013-03-11T23:10:57+08:00</updated>
-    <id>http://ciffel.github.io/2013/03/11/cant-open-downloaded-files-from-chrome</id>
+    <id>http://blog.shume.in/2013/03/11/cant-open-downloaded-files-from-chrome</id>
     <content type="html"><![CDATA[<p>在MacOS 10.8.2的Google Chrome，下載檔案後，無法從底下的下載列直接點選檔案來開啟，這時候只需要重開一個process就可以了。</p>
 
 <p><code>
@@ -32,9 +32,9 @@ $ sudo killall -KILL appleeventsd
   
   <entry>
     <title type="html"><![CDATA[Ecourse Fix - Google Chrome Extentsion]]></title>
-    <link href="http://ciffel.github.io/2012/12/12/ecourse_fix_google_chrome/"/>
+    <link href="http://blog.shume.in/2012/12/12/ecourse_fix_google_chrome/"/>
     <updated>2012-12-12T23:08:11+08:00</updated>
-    <id>http://ciffel.github.io/2012/12/12/ecourse_fix_google_chrome</id>
+    <id>http://blog.shume.in/2012/12/12/ecourse_fix_google_chrome</id>
     <content type="html"><![CDATA[<h2>說明</h2>
 
 <p>由於中正大學的課程教學系統在Google Chrome上有相容性問題，會導致功能選單與課程教材連結無效，所以才有這個擴充套件的出現。</p>
